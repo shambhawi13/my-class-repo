@@ -22,15 +22,11 @@ section {
 }
 
 
-.clearfix ::after{
+.clearfix :after{
   content: '';
   display: block;
   clear: both;
-  margin-bottom: 20px;
-}
-
-.clearfix{
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 #left {
