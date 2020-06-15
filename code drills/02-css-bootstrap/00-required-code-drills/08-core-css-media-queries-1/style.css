@@ -95,10 +95,49 @@ Therefore, we want our media queries in descending order, so that the most recen
 
 @media (max-width: 900px) {
 /* Set the font-size to 45% */
+  html{
+    font-size: 45%;
+  }
+
+  .heading-primary{
+    color: purple;
+  }
+  .heading-sub{
+    display: block;
+  }
+  .btn{
+    background-color: red;
+    position: absolute;
+    width: 35%;
+    top: 10%;
+    left: 34%;
+  }
+  .about__box--center{
+    border: solid 5px green;
+  }
 
 }
 
 @media (max-width: 600px) {
   /* For the colorful background, look up setting a background-image to a linear gradient in css */
-
+  body{
+    background-color: indianred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .heading-primary{
+    color: #fff;
+  }
+  .heading-sub{
+    display: block;
+  }
+  .btn{
+    background-color: red;
+    position: absolute;
+    width: 35%;
+    top: 10%;
+    left: 34%;
+  }
+  .about__box--center{
+    border: solid 10px green;
+  }
 }
