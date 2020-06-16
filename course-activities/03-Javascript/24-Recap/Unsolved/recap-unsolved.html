@@ -23,16 +23,30 @@
 
 
       // How do we print out every single student in Row 1?
-
+      for(let i of studentsRow1){
+        console.log(i);
+      }
 
       // How do we print out every student in Row 2 whose first name begins with J?
-
+      for(let i of studentsRow2){
+        if(i.charAt(0) === 'J'){
+          console.log(i);
+        }
+      }
 
       // Using the entireClass array, how do we access the second student in row 3?
-
+      for(let i of entireClass){
+        if(i === studentsRow3){
+          console.log("row 3 second element : " + i[1]);
+        }
+      }
 
       // Using the entireClass array, how do we access the third student in row 2?
-
+      for(let i of entireClass){
+        if(i === studentsRow2){
+          console.log("row 2 third element : " + i[2]);
+        }
+      }
 
     </script>
     

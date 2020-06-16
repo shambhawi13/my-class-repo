@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        alert('Play rock paper scissors')
+        var counter = 0;
+        play();
+
+        function play() {
+            var user1 = prompt('Enter your choice r/p/s');
+            var arr = ['r', 'p', 's'];
+            var getRandom = Math.floor(Math.random() * 3);
+            var user2 = arr[getRandom];
+            alert('system input : ' + user2);
+            switch (user1) {
+                case 'r':
+                    if (user2 === 'p') alert('You lose..!!!');
+                    else if (user2 === user1) alert("There's a tie");
+                    else {
+                        alert('Yayyyy..!!!! You win');
+                        counter++;
+                    }
+                    break;
+                case 'p':
+                    if (user2 === 's') alert('You lose..!!!');
+                    else if (user2 === user1) alert("There's a tie");
+                    else {
+                        alert('Yayyyy..!!!! You win');
+                        counter++;
+                    }
+                    break;
+                case 's':
+                    if (user2 === 'r') alert('You lose..!!!');
+                    else if(user2 === user1) alert("There's a tie");
+                    else {
+                        alert('Yayyyy..!!!! You win');
+                        counter++;
+                    }
+                    break;
+                default:
+                    alert('Please enter a valid input. Choose r/p/s');
+                    break;
+            }
+        }
+
+        
+        while (true) {
+            alert('You won ' + counter + ' times!!!!!');
+            var playAgain = confirm('Do you want to play again');
+            if (playAgain) {
+                play();
+            }
+            else
+                break;
+        }
+
+    </script>
+</body>
+
+</html>
