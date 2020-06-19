@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var qa = [{ q: "Is 2 between 1 and 3", a: true },
+        { q: "20 divisible by 10", a: true }, 
+        { q: "Are bananas Blue?", a: false }, 
+        { q: "20 divisible by 3", a: false },
+        { q: "20 divisible by 3", a: false } ];
+
+        var score = 0;
+        //console.log(Object.keys(qa[0])[0]);
+        for(let i=0;i<qa.length;i++){
+            var answer = confirm(qa[i]['q']);
+            if(qa[i]['a'] === answer){
+                score++;
+                alert('Yayyy!!! you are correct.')
+            }
+            else{
+                alert('You are wrong')
+            }
+        }
+        alert('Your score is : ' + score + "/" + qa.length);
+    </script>
+</body>
+</html>
