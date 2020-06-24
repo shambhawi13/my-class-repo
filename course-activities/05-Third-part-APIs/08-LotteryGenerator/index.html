@@ -36,9 +36,14 @@
 
       // CREATE THE MISSING CODE HERE. Your code should add content to the random-number div.
       // ...
+      
       $('#random-button').on('click',function(){
-        var randomNum = Math.floor(Math.random()*1000)+1;
-        $('#random-number').text(randomNum);
+        let randomNum = ' ';
+        $('#random-number').text('');
+          for(let i=0;i<9;i++){
+            randomNum = Math.floor(Math.random()*10);
+            $('#random-number').append(randomNum);
+          }
       })
       
 

@@ -72,11 +72,17 @@
               // Compare the computer and user guess
               // Inform the user if the've guessed correctly or incorrectly
               // console.log("You clicked a button!!");
-              console.log(this);
-              console.log($(this).text());
               console.log($(this).val());
               var buttonValue = $(this).val();
 
+              var randomComputer = Math.floor(Math.random()*5);
+              $('#computer-pick').text(randomComputer);
+              if(parseInt(buttonValue) === parseInt(randomComputer)){
+                $('#result').text("Yayy!!! There's a match.");
+              }
+              else{
+                $('#result').text('Sorry its not a match.');
+              }
             });
           });
 
